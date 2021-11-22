@@ -32,6 +32,22 @@ void Memo::createMemo(string text)
     this->memoList.push_back(text);
     cout << "追加完了！" << endl;
 }
+void Memo::deleteMemo()
+{
+    int no = 0;
+    string no_str = "";
+    cout << "削除するメモを選択してください" << endl;
+
+    this->showMemo();
+    cout << ">> : ";
+    cin >> no_str;
+    no = atoi(no_str.c_str());
+
+    auto removeElement = this->memoList.begin() + no - 1;
+    if (removeElement != this->memoList.end()) {
+        this->memoList.erase(removeElement);
+    }
+}
 void Memo::save()
 {
     cout << "下記メモ内容を保存します。" << endl;

@@ -36,6 +36,9 @@ int main() {
                 cin >> memo_text;
                 memo->createMemo(memo_text);
             break;
+            case 4:
+                memo->deleteMemo();
+            break;
             case 5:
                 memo->save();
             break;

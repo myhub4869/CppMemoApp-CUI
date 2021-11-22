@@ -16,6 +16,8 @@ public:
 
     void showMemo();
     void createMemo(string text);
+    void updateMemo();
+    void deleteMemo();
 
     void save();
 };

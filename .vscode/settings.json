@@ -4,6 +4,9 @@
         "sstream": "cpp",
         "istream": "cpp",
         "iosfwd": "cpp",
-        "ios": "cpp"
-    }
+        "ios": "cpp",
+        "vector": "cpp"
+    },
+    "C_Cpp.clang_format_style": "{BasedOnStyle: Google, IndentWidth: 4}",
+    "C_Cpp.errorSquiggles": "Disabled"
 }
